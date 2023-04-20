@@ -1,64 +1,62 @@
 <!-- Side nav -->
 <mat-sidenav-container autosize fullscreen>
     <mat-sidenav #sidenav mode="over">
-        <mat-list>
-            <mat-list-item>Link</mat-list-item>
-            <mat-list-item>Link</mat-list-item>
-            <mat-list-item>Link</mat-list-item>
-        </mat-list>
+        <mat-nav-list>
+            <mat-list-item>Lorem ipsum dolor sit</mat-list-item>
+            <mat-list-item>Lorem ipsum dolor sit</mat-list-item>
+            <mat-list-item>Lorem ipsum dolor sit</mat-list-item>
+        </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
 
         <!-- Appbar -->
-        <div class="flex-row-between appbar-init text-secondary">
+        <div class="e-flex-row-between e-appbar-init e-text-secondary">
             <!-- Appbar left -->
-            <div class="flex-row-start col-gap-12px">
+            <div class="e-flex-row-start e-col-gap-12px">
                 <!-- Menu -->
-                <div class="flex-row-center sidebar-menu-div" (click)="sidenav.toggle()">
-                    <mat-icon class="text-white">menu</mat-icon>
+                <div class="e-flex-row-center e-sidebar-menu-div" (click)="sidenav.toggle()">
+                    <mat-icon class="e-text-white">menu</mat-icon>
                 </div>
 
                 <!-- Logo -->
                 <img src="../../assets/eModal-Logo.svg" alt="eModal Logo" />
 
                 <!-- Title -->
-                <p class="app-title">eModal Community Portal</p>
+                <p class="e-app-title">eModal Community Portal</p>
             </div>
 
             <!-- Appbar right -->
             <!-- Appbar Icons -->
-            <div class="flex-row-end height-full">
-                <div matRipple [matRippleCentered]="false" [matRippleDisabled]="false"
-                    [matRippleUnbounded]="false"
-                    class="flex-row-center appbar-header-icon">
+            <div class="e-flex-row-end e-height-full">
+                <div matRipple class="e-flex-row-center e-appbar-header-icon">
                     <mat-icon>shopping_cart</mat-icon>
                 </div>
-                <div class="flex-row-center appbar-header-icon">
+                <div matRipple class="e-flex-row-center e-appbar-header-icon">
                     <mat-icon>notifications</mat-icon>
                 </div>
-                <div class="flex-row-center appbar-header-icon">
+                <div matRipple class="e-flex-row-center e-appbar-header-icon">
                     <mat-icon>settings</mat-icon>
                 </div>
-                <div class="flex-row-center appbar-header-icon">
+                <div matRipple class="e-flex-row-center e-appbar-header-icon">
                     <mat-icon>help</mat-icon>
                 </div>
-                <div class="flex-row-center appbar-header-icon">
+                <div matRipple class="e-flex-row-center e-appbar-header-icon">
                     <mat-icon>person</mat-icon>
                 </div>
             </div>
         </div>
 
         <!-- Actionsbar -->
-        <div class="flex-row-between actionsbar-init text-secondary">
+        <div class="e-flex-row-between e-actionsbar-init e-text-secondary">
             <!-- Actionsbar left -->
-            <div class="flex-row-center height-full">
-                <div class="flex-row-center col-gap-12px">
-                    <p class="actionsbar-title">Containers</p>
+            <div class="e-flex-row-center e-height-full">
+                <div class="e-flex-row-center e-col-gap-12px">
+                    <p class="e-actionsbar-title">Containers</p>
 
                     <!-- Actions menu -->
-                    <div class="justify-between rounded">
+                    <div class="e-justify-between e-rounded">
                         <button mat-stroked-button [matMenuTriggerFor]="menuAction">
-                            <div class="flex-row-center letter-spacing-0">
+                            <div class="e-flex-row-center e-letter-spacing-0">
                                 Actions <mat-icon>arrow_drop_down</mat-icon>
                             </div>
                         </button>
@@ -70,31 +68,31 @@
                         </mat-menu>
                     </div>
 
-                    <button mat-stroked-button class="letter-spacing-0">Add to my Containers</button>
+                    <button mat-stroked-button class="e-letter-spacing-0">Add to my Containers</button>
                 </div>
             </div>
 
             <!-- Actionsbar right -->
-            <div class="flex-row-center">
+            <div class="e-flex-row-center">
                 <!-- Button Group -->
-                <div class="flex-row-start btn-group box-sizing-box">
+                <div class="e-flex-row-start e-btn-group e-box-sizing-box">
                     <!-- Button -->
-                    <button mat-button class="flex-row-center btn-group-icon-start">
+                    <button matRipple class="e-flex-row-center e-btn-group-icon-start">
                         <mat-icon>refresh</mat-icon>
                     </button>
                     <!-- Button -->
-                    <button class="flex-row-center btn-group-icon">
+                    <button matRipple class="e-flex-row-center e-btn-group-icon">
                         <mat-icon>filter_alt</mat-icon>
                     </button>
                     <!-- Button -->
-                    <div class="flex-row-between border-radius-4px box-sizing-box">
-                        <button mat-button [matMenuTriggerFor]="menuSavedViews" class="p-8px">
-                            <div class="flex-row-center">
-                                <p class="pr-28px letter-spacing-0">Saved Views</p>
+                    <div class="e-flex-row-between e-border-radius-4px e-box-sizing-box">
+                        <button mat-button [matMenuTriggerFor]="menuSavedViews" class="e-p-8px">
+                            <div class="e-flex-row-center">
+                                <p class="e-pr-28px e-letter-spacing-0">Saved Views</p>
                                 <mat-icon>arrow_drop_down</mat-icon>
                             </div>
                         </button>
-                        <mat-menu #menuSavedViews="matMenu" class="btn-group-dropdown-menu">
+                        <mat-menu #menuSavedViews="matMenu" class="e-btn-group-dropdown-menu">
                             <button mat-menu-item>View 1</button>
                             <button mat-menu-item>View 2</button>
                             <button mat-menu-item>View 3</button>
@@ -102,7 +100,7 @@
                         </mat-menu>
                     </div>
                     <!-- Button -->
-                    <button class="flex-row-center btn-group-icon-end ">
+                    <button matRipple class="e-flex-row-center e-btn-group-icon-end ">
                         <mat-icon>save</mat-icon>
                     </button>
                 </div>
